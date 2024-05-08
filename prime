@@ -1,0 +1,9 @@
+s=int(input("Staryt:"))
+e=int(input("Enter end:"))
+for i in range(s,e+1):
+    flag=1
+    for j in range(2,i):
+        if(i%j==0):
+            flag=0
+    if(flag==1):
+        print(i,end=' ')
